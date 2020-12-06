@@ -7,7 +7,7 @@ class Rectangle:
         self.width = width
 
     def __str__(self):
-        return 'Rectangle(width={}, height={})'.format(self.width, self.height)
+        return "Rectangle(width={}, height={})".format(self.width, self.height)
 
     def set_height(self, height):
         self.height = height
@@ -26,14 +26,14 @@ class Rectangle:
 
     def get_picture(self):
         if self.height > 50 or self.width > 50:
-            return 'Too big for picture.'
+            return "Too big for picture."
 
-        pic = ''
+        pic = ""
         for i in range(self.height):
-            stars = ''
+            stars = ""
             for j in range(self.width):
-                stars += '*'
-            pic += stars + '\n'
+                stars += "*"
+            pic += stars + "\n"
 
         return pic
 
@@ -49,7 +49,7 @@ class Square(Rectangle):
         self.side = side
 
     def __str__(self):
-        return 'Square(side={})'.format(self.side)
+        return "Square(side={})".format(self.side)
 
     def set_side(self, side):
         self.side = side
